@@ -1,3 +1,5 @@
+# This is a program to print the Pascal's triangle till the row desired by the user
+
 def printPascal(n):
   n = int(input("How many rows of the Pascal's triangle do you want to print? \n"))
   for i in range(1, n+1):
