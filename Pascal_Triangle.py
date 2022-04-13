@@ -11,4 +11,4 @@ def printPascal(n):
       C = C * (i -j) // j
     print()
     
-# printPascal(6)
+#printPascal(6)
