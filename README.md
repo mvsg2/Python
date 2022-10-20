@@ -1,2 +1,3 @@
-# Python
-I want to place here all the codes that I come across in Python.
+## Python
+Python is one of the most adored languages by most of the people around the globe. 
+Let's see what this language can do by testing programs in it to thier extremes...
