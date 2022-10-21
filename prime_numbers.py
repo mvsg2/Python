@@ -1,12 +1,21 @@
-# I want to add some code here that has a bunch of instructions to pin-point what the primes are...
-def get_primes():
-  lower_limit = int(input("Enter lower range: "))  
-  upper_limit = int(input("Enter upper range: "))  
-  
-  for num in range(lower_limit,upper_limit + 1):  
-   if num > 1:  
-       for i in range(2,num):  
-           if (num % i) == 0:  
-               break  
-       else:  
-           print(num)
+"""
+Check whether the given number is prime.
+Argument(s): n (integer)
+Returns: None
+"""
+def isAPrime(n):
+    for num in range(2, n):
+        if(n % num == 0):
+            print("Nope! Not a prime.")
+            break
+    else:
+        print("Yay! It's a prime!")
+
+if __name__ == "__main__":
+    while True:
+        N = input("Enter an integer (type 'exit' or 'quit' to close the program): ")
+        if N == 'exit' or N == 'quit':
+            break
+        else:
+            N = int(N)
+            isAPrime(N)
