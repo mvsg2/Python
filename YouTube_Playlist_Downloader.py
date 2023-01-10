@@ -1,6 +1,13 @@
 from pytube import Playlist
 
 def YouTubePlaylistDownloader(playlist_url, download_path):
+    """
+    Downloads an entire YouTube one video at a time.
+    
+    Args:
+    playlist_url (string)  : The URL of the playlist to be downloaded
+    download_path (string) : The local path of the directory where the playlist is to be downloaded in
+    """
 
     playlist = Playlist(url=playlist_url)
     print()
