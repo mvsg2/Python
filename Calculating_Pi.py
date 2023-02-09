@@ -30,7 +30,7 @@ def PiCalculator(n : int, want_a_plot=False):
 
     circle_points = [(X_circle[i], Y_circle[i]) for i in range(len(X_circle))]
 
-    print(f"The value of pi is approximately equal to: {(len(X_circle)/len(X))*4}")
+    print(f"The value of pi is approximately equal to: {(len(circle_points)/len(X))*4}")
 
     if (want_a_plot==True):
         plt.figure(figsize=(5,5))
