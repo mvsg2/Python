@@ -14,7 +14,7 @@ def initialize_state(num_qubits):
     Returns:
         array[float]: the vector representation of state |0>.
     """
-    # PREPARE THE STATE |0>
+    # PREPARE THE STATE |0000...000>
     zero_components = [0 for _ in range(2**num_qubits-1)]   
     return np.array([1] + zero_components)
 
