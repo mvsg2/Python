@@ -97,8 +97,8 @@ def quantum_algorithm(gates_to_be_applied, no_times_to_run):
         state_after_U_applied = apply_U_Gate(gate, init)
         init = state_after_U_applied
     final_state = state_after_U_applied
-    meas = measure_state(state_after_U_applied, no_times_to_run)
-    return meas, final_state
+    meas = measure_state(state_after_U_applied, no_times_to_run) # For simplicity, just one gate is applied, but any sequential steps in an algorithm can be applied
+    return meas, final_state                                                         # for instance, the entanglement logic coded below in a function
 
 def entanglement_circuit(num_qubits):
     """Entangles all the given qubits
