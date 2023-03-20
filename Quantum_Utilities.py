@@ -1,6 +1,8 @@
 import numpy as np
 import functools as ft
 
+# TODO : Make the logic for Quantum Teleportation and Entanglement Swapping
+
 X = np.array([[0,1], [1,0]])   # Applying a Pauli X gate
 H = (1/np.sqrt(2))*np.array([[1,1], [1,-1]]) # Applying a Hadamard gate
 Z = np.array([[1,0], [0,-1]])
